@@ -17,7 +17,6 @@ Link para baixar o nodejs -> https://nodejs.org/en/
 
 
 ------------- Docker ---------------------------
-
 1 -> Com o docker instalado na máquina, execute um terminal com permissão de administrador
 2 -> Va até a pasta raiz do projeto e execute os seguintes comandos:
 
