@@ -1,0 +1,65 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+
+
+.companyBill-container {
+  display: grid;
+  grid-template-areas: "menu main main main main right";
+  padding: 10px;
+}
+
+.companyBill-container > div {
+  padding: 10px 0;
+}
+
+.companyBill-container .item2 {
+  text-align: left;
+}
+
+.companyBill-container .item4 {
+  text-align: right;
+}
+
+.companyBill-container p {
+  margin-top: 7px;
+  color: #0D163A;
+  font-size: 15px;
+  font-weight: semi-bold;
+  text-align: left;
+}
+
+.companyBill-img img {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.companyBill-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #3BBB6E;
+  box-shadow: var(--box-shadow);
+}
+
+.companyBill-button:hover {
+  transition: all 0.3s ease-out;
+  background: #88FAB5;
+  color: #000;
+  transition: 250ms;
+}

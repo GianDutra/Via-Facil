@@ -1,0 +1,99 @@
+.recent-bills {
+  margin-top: 2rem;
+}
+
+.recent-bills h2 {
+  margin-bottom: 0.8rem;
+  margin-top: 24px;
+}
+
+.companyBillQrCode-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  width: 30%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #3BBB6E;
+  color: black;
+  box-shadow: var(--box-shadow);
+}
+
+.companyBillQrCode-button:hover {
+  transition: all 0.3s ease-out;
+  background: #88FAB5;
+  color: #000;
+  transition: 250ms;
+}
+
+.recent-bills table {
+  background: var(--color-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  margin-bottom: 24px;
+}
+
+.recent-bills-table:hover {
+  box-shadow: 0 1rem 1rem rgb(185, 217, 228);
+}
+
+.recent-bills table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+
+.recent-bills table,
+tbody,
+tr:last-child,
+td {
+  border: none;
+}
+
+.recent-bills a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: gray;
+}
+
+.recent-bills img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  align-self: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .recent-bills {
+  }
+}
+
+.bill-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #3bbb6e;
+  box-shadow: var(--box-shadow);
+}
+
+.semContas {
+  text-align: center;
+  margin-top: 24px;
+  color: gray;
+
+}
+
+.danger {
+  color: red;
+}
+
+.success {
+  color: green;
+}

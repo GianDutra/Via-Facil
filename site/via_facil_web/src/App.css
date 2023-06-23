@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.404);
+}
+
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+/* ============================= Estilização das páginas ============================= */
+
+/* ============================= Parceria background ============================= */
+
+.parcerias-content {
+  background: linear-gradient(165.09deg, #323233 6.23%, #1cd8e9 87.54%);
+  color: #fff;
+}
+
+/* ============================= Páginas [Login, SignUp] ============================= */
+
+.section_form_login_SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ============================= Página HomeUser ============================= */
+
+.h2-homeUser {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  font-size: xx-large;
+}
+
+.HomeUser_content {
+  position: absolute;
+  width: calc(100% - 75px);
+  left: 75px;
+  transition: all 0.5s ease;
+  user-select: none;
+  overflow: hidden;
+}
+
+.HomeUser_content2 {
+  position: absolute;
+  width: calc(100%);
+  transition: all 0.5s ease;
+  user-select: none;
+  overflow: hidden;
+}
+
+.HomeUser_content.active {
+  width: calc(100% - 240px);
+  left: 240px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.homeUser-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.homeUser-header {
+  background-color: #1d1b31;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.homeUser-aside {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 14px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+.homeUser-footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+
+/* ============================= Página Keychain ============================= */
+
+.keychain-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ============================= ProfileCards ============================= */
+
+/* Create four equal columns that floats next to each other */
+
+.AboutUs-Title {
+  font-size: 46px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.column-profileCard {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row-profileCard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-profileCard h1 {
+  padding-left: 10%;
+  padding-top: 70px;
+  font-size: xxx-large;
+}
+
+.profileCard-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .column-profileCard {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .column-profileCard {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* ============================= Página addCompany ============================= */
+
+.addCompany_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.5s ease;
+}
+
+.title-add-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.title-add-company h1 {
+  font-size: xxx-large;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
+}
+
+.title-add-company h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
+}
+
+.addCompany_content.active {
+  width: calc(100% - 240px);
+  left: 240px;
+}
+
+.formCompany {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .title-add-company h1 {
+    font-size: xx-large;
+  }
+
+  .title-add-company h2 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .title-add-company h1 {
+    font-size: x-large;
+  }
+
+  .title-add-company h2 {
+    font-size: large;
+  }
+}
+
+/* ============================= Página EditUser ============================= */
+
+.form-edit-user h1 {
+  font-size: xxx-large;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15%;
+}
+
+.profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.profile-pic input {
+  display: none;
+}
+
+.profile-pic img {
+  position: absolute;
+  object-fit: cover;
+  width: 165px;
+  height: 165px;
+  box-shadow: var(--box-shadow);
+  border-radius: 100px;
+  z-index: 0;
+}
+
+.profile-pic .-label {
+  cursor: pointer;
+  height: 165px;
+  width: 165px;
+  z-index: 999;
+  border-radius: 100px;
+}
+
+.profile-pic .-label:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 100px;
+  margin-bottom: 0;
+}
+
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+
+/* ============================= Página Show-Bills ============================= */
+
+.container-show-bill {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bill-header {
+  display: flex;
+}
+
+.h2-boleto {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.bill-body {
+  background: #f5f5f5;
+  padding: 1.5em;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  border: 6px solid rgb(0, 0, 0);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.24);
+}
+
+.bill-body p {
+  text-align: justify;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+  color: rgb(0, 0, 0);
+}
+
+.p-intrucoes-boleto {
+  font-size: smaller;
+  margin: 5px;
+}
+
+.title-bill {
+  font-size: medium;
+}
+
+.text-content-bill{
+  font-size: smaller;
+}
+
+.bill-body th {
+  height: 90px;
+  text-align: left;
+}
+
+.bill-body td {
+  height: 60px;
+  text-align: left;
+}
+
+.bill-body td {
+  background: #f5f5f5;
+  border: 3px solid rgb(0, 0, 0);
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.bill-body th {
+  background: #f5f5f5;
+  border: 3px solid rgb(0, 0, 0);
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.bill-body table {
+  background: #f5f5f5;
+  border: 3px solid rgb(0, 0, 0);
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.bill-body table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 8px;
+}
+
+.bill-body button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 1200px) {
+  .bill-body {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bill-body {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .bill-body {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .title-bill {
+    font-size: small;
+  }
+  
+  .text-content-bill{
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title-bill {
+    font-size: 12px;
+  }
+  
+  .text-content-bill{
+    font-size: 10px;
+  }
+
+  .p-intrucoes-boleto {
+    font-size: 10px;
+
+  }
+
+  .bill-body {
+    height: 750px;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-bill {
+    font-size: 9px;
+  }
+  
+  .text-content-bill{
+    font-size: 9px;
+  }
+
+  .p-intrucoes-boleto {
+    font-size: 10px;
+
+  }
+
+  .bill-body {
+    height: 750px;
+    padding: 0.5em;
+  }
+}
