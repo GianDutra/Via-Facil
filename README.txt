@@ -4,7 +4,9 @@
 3 -> Após abrir ele no editor, ir até a classe BackendApplication.java e clicar em run, para que o backend suba em um servidor Apache TomCat.
 4 -> Depois de fazer os passos acima, pronto o backend já está no ar!!!
 
-Obs: É necessário que esteja com o Java 11 instalado ná sua máquina, para que o backend rode na versão que ele foi desenvolvido.
+Obs: É necessário que esteja com o Java 11 instalado na sua máquina, para que o backend rode na versão que ele foi desenvolvido.
+
+
 ------------- FrontEnd ----------------------
 1 -> Abra a pasta via_facil_web dentro da pasta site em algum editor de código de preferência, sempre usamos o visual studio code quando vamos mexer com Typescript no frontend em si.
 2 -> Após ter entrado na pasta pelo editor, abra o terminal dentro da pasta e rode o comando npm install para que baixe a pasta node_modules, essa pasta contém todas as dependencias usadas em nosso projeto.
@@ -12,6 +14,7 @@ Obs: É necessário que esteja com o Java 11 instalado ná sua máquina, para qu
 4 -> Após isso você deve rodar o comando npm start no terminal e pronto, o frontend vai rodar no servidor local na porta 3000.
 
 Link para baixar o nodejs -> https://nodejs.org/en/
+
 
 ------------- Docker ---------------------------
 
